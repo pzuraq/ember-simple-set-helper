@@ -1,4 +1,4 @@
-# ember-set-helper
+# ember-simple-set-helper
 
 A(nother) better `mut` helper!
 
