@@ -1,11 +1,11 @@
 {
   "name": "ember-simple-set-helper",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A(nother) better `mut` helper!",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/pzuraq/ember-set-helper",
+  "repository": "https://github.com/pzuraq/ember-simple-set-helper",
   "license": "MIT",
   "author": "Chris Garrett",
   "directories": {
