@@ -8,9 +8,18 @@
   </button>
 </div>
 
+<hr>
+
 <div>
   count: {{this.count}}
 </div>
 <div>
   <Counter @onUpdate={{set this.count}} />
+</div>
+
+<hr>
+
+<div>
+  <p>Name: {{this.user.name}}</p>
+  <Parent @user={{this.user}} />
 </div>
