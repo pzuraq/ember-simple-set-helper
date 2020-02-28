@@ -2,6 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render, find, click } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
+import User from 'dummy/models/user';
 
 module('Integration | Helper | set', function(hooks) {
   setupRenderingTest(hooks);
@@ -34,5 +35,19 @@ module('Integration | Helper | set', function(hooks) {
     await click('button');
 
     assert.equal(find('[data-test-count]').textContent.trim(), '2');
+  });
+
+  test('it works without a value on an object', async function(assert) {
+    this.set('user', User.create({ name: 'Alice' }));
+    await render(hbs`
+      <span data-test-name>{{this.user.name}}</span>
+      <Parent @user={{this.user}} />
+    `);
+
+    assert.dom('[data-test-name]').hasText('Alice');
+
+    await click('button');
+
+    assert.dom('[data-test-name]').hasText('Bob');
   });
 });
