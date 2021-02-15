@@ -1,5 +1,11 @@
 # ember-simple-set-helper
 
+## :warning: Deprecated
+
+`ember-simple-set-helper` is now deprecated. This addon was intended to be a more straightforward and simple replacement for Ember's `mut` helper compared to [ember-set-helper](https://github.com/pzuraq/ember-set-helper), but since the [placeholders](https://github.com/pzuraq/ember-set-helper/tree/0.1.1#placeholders) functionality of `ember-set-helper` was removed in [v1.0.0](https://github.com/pzuraq/ember-set-helper/releases/tag/v1.0.0), it makes sense to deprecate this addon in favour of `ember-set-helper`.
+
+## Introduction
+
 A(nother) better `mut` helper!
 
 ```hbs
