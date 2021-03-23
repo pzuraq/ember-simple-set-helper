@@ -1,5 +1,9 @@
 # ember-simple-set-helper
 
+**NOTE: This addon is deprecated in favor of [ember-set-helper](https://github.com/pzuraq/ember-set-helper)**
+
+---
+
 A(nother) better `mut` helper!
 
 ```hbs
